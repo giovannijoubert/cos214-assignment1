@@ -10,8 +10,7 @@ using namespace std;
 	    public:
             SoldierMemento(string nName, int nHP, int nDamage, 
                     string nPrimaryWeapon, string nSecondaryWeapon);
-            ~SoldierMemento();
-            void restoreMemento(SoldierMemento *);
+            ~SoldierMemento();d
         
         private:
             string name;

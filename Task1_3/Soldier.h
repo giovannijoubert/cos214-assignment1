@@ -20,7 +20,7 @@ using namespace std;
             void setHP(int);
 
 		protected:
-			      virtual bool hitZombie(Zombie *)=0;
+	    virtual bool hitZombie(Zombie *)=0;
             virtual void celebrate()=0;
             virtual bool getHit(Zombie *)=0;
             virtual void die()=0;
