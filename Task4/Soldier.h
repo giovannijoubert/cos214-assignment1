@@ -1,0 +1,40 @@
+#ifndef SOLDIER_H
+#define SOLDIER_H
+
+#include <string>
+#include "SoldierMemento.h"
+#include "Zombie.h"
+
+using namespace std;
+
+  class Soldier {
+		
+	  public:
+            Soldier(string, int, string, int);
+            virtual ~Soldier();
+            void attack(Zombie *);
+            string getName();
+            int getHP();
+            int getDamage();
+            string getPrimaryWeapon();
+            string getSecondaryWeapon();
+            void setHP(int);
+            SoldierMemento * createMemento();
+            void restoreMemento(SoldierMemento *);
+
+    protected:
+	    virtual bool hitZombie(Zombie *)=0;
+            virtual void celebrate()=0;
+            virtual bool getHit(Zombie *)=0;
+            virtual void die()=0;
+    private:
+            string name;
+            int hp;
+            int damage;
+            string primaryWeapon;
+            string secondaryWeapon;
+
+            friend class SoldierMemento;
+	};
+
+#endif

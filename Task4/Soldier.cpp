@@ -48,3 +48,15 @@ string Soldier::getSecondaryWeapon(){
 void Soldier::setHP(int nHP){
     hp = nHP;
 }
+
+SoldierMemento * Soldier::createMemento(){
+    SoldierMemento * m = new SoldierMemento(name, hp, damage, primaryWeapon, secondaryWeapon);
+    return m;
+}
+
+void Soldier::restoreMemento(SoldierMemento * m){
+	name = m->name;
+    hp = m->hp;
+    primaryWeapon = m->primaryWeapon;
+    damage = m->damage;
+}

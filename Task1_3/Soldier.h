@@ -18,6 +18,7 @@ using namespace std;
             string getPrimaryWeapon();
             string getSecondaryWeapon();
             void setHP(int);
+
 		protected:
 			      virtual bool hitZombie(Zombie *)=0;
             virtual void celebrate()=0;

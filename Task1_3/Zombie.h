@@ -23,6 +23,7 @@ public:
 	int getDamage();
 
 	Zombie * clone();
+	friend class ZombieMemento;
 };
 
 #endif

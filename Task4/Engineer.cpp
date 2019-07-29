@@ -13,7 +13,7 @@ bool Engineer::hitZombie(Zombie * z){
 }
 
 void Engineer::celebrate(){
-    cout << getName() << " shakes his " << getPrimaryWeapon() << "at the zombie's remains" << endl;
+    cout << getName() << " shakes his " << getPrimaryWeapon() << " at the zombie's remains" << endl;
 }
 
 bool Engineer::getHit(Zombie * z){
