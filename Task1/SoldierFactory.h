@@ -1,6 +1,7 @@
 #ifndef SOLDIERFACTORY_H
 #define SOLDIERFACTORY_H
 
+#include "Soldier.h"
 #include <string>
 
 using namespace std;

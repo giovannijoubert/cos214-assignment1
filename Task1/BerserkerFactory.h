@@ -1,6 +1,7 @@
 #ifndef BERSERKERFACTORY_H
 #define BERSERKERFACTORY_H
 
+#include "Berserker.h"
 #include "SoldierFactory.h"
 #include <string>
 

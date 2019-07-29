@@ -1,6 +1,7 @@
 #ifndef ENGINEERFACTORY_H
 #define ENGINEERFACTORY_H
 
+#include "Engineer.h"
 #include "SoldierFactory.h"
 #include <string>
 

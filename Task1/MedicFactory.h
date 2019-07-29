@@ -1,6 +1,7 @@
 #ifndef MEDICFACTORY_H
 #define MEDICFACTORY_H
 
+#include "Medic.h"
 #include "SoldierFactory.h"
 #include <string>
 

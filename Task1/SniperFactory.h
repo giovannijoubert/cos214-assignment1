@@ -1,6 +1,7 @@
 #ifndef SNIPERFACTORY_H
 #define SNIPERFACTORY_H
 
+#include "Sniper.h"
 #include "SoldierFactory.h"
 #include <string>
 

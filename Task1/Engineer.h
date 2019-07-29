@@ -12,10 +12,10 @@ using namespace std;
             Engineer(string, int, string, int);
             
 		protected:
-			virtual bool hitZombie(Zombie *)=0;
-            virtual void celebrate()=0;
-            virtual bool getHit(Zombie *)=0;
-            virtual void die()=0;
+			 bool hitZombie(Zombie *);
+             void celebrate();
+             bool getHit(Zombie *);
+             void die();
 	};
 
 #endif
