@@ -21,6 +21,8 @@ public:
 	
 	// returns the zombie's damage
 	int getDamage();
+
+	Zombie * clone();
 };
 
 #endif

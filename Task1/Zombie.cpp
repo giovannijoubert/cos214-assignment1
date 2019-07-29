@@ -24,3 +24,8 @@ int Zombie::getDamage()
 	cout << "Zombie used " << attackType << "." << endl;
 	return damage;
 }
+
+Zombie * Zombie::clone(){
+	Zombie * out = new Zombie(attackType.c_str(),damage);
+	return out;
+}

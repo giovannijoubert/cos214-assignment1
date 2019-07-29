@@ -9,7 +9,7 @@ using namespace std;
   class Engineer : public Soldier {
 		
 	  public:
-            Engineer();
+            Engineer(string, int, string, int);
             
 		protected:
 			virtual bool hitZombie(Zombie *)=0;

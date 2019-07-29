@@ -11,9 +11,21 @@ Soldier::Soldier(string cName, int cHP, string cPrimaryWeapon, int cDamage){
 Soldier::~Soldier(){}
 
 void Soldier::attack(Zombie * z){
+    while(getHP() > 0){
+        if(hitZombie(z)){
+            //zombie died
+            celebrate();
+            break;
+        } else {
+            if(getHit(z)){
+                die();
+                break;
+            }
+        }
+    }
 }
 
-int Soldier::getName(){
+string Soldier::getName(){
     return name;
 }
 

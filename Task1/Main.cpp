@@ -42,7 +42,7 @@ int main()
 		
 		// The following line of code is a good example of the usefulness of the Factory Method.
 		// Here, we are constructing an instance of a different class depending on use input.
-		Soldiers[i] = factories[type]->createSoldier(name);
+		soldiers[i] = factories[type]->createSoldier(name);
 	}
 	
 	// initialize zombie prototypes
@@ -61,7 +61,7 @@ int main()
 		cout << "1 - Slashing zombie" << endl;
 		cout << "2 - Spitting zombie" << endl;
 		cout << "3 - Pouncing zombie" << endl;
-		cout << "What type is zombie #" << i+1 << "? ");
+		cout << "What type is zombie #" << i+1 << "? ";
 		cin >> type;
 		
 		// The following line of code is a good example of the usefulness of the Prototype design.
@@ -91,7 +91,7 @@ int main()
 	{
 		delete factories[i];
 	}
-	delete [] factories;
+	//delete [] factories;
 	
 	for (int i = 0; i < numZombieTypes; i++)
 	{

@@ -1,7 +1,7 @@
 #include "Berserker.h"
 #include <iostream>
 
-Berserker::Berserker(string cName, int cHP, string cPrimaryWeapon, string cDamage) 
+Berserker::Berserker(string cName, int cHP, string cPrimaryWeapon, int cDamage) 
     : Soldier(cName, cHP, cPrimaryWeapon, cDamage){}
 
 

@@ -9,10 +9,10 @@ using namespace std;
   class Soldier {
 		
 	  public:
-            Soldier();
+            Soldier(string, int, string, int);
             virtual ~Soldier();
             void attack(Zombie *);
-            int getName();
+            string getName();
             int getHP();
             int getDamage();
             string getPrimaryWeapon();

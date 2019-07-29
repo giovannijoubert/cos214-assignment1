@@ -1,7 +1,7 @@
 #include "Sniper.h"
 #include <iostream>
 
-Sniper::Sniper(string cName, int cHP, string cPrimaryWeapon, string cDamage) 
+Sniper::Sniper(string cName, int cHP, string cPrimaryWeapon, int cDamage) 
     : Soldier(cName, cHP, cPrimaryWeapon, cDamage){}
 
 bool Sniper::hitZombie(Zombie * z){

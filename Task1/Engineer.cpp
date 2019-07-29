@@ -1,7 +1,7 @@
 #include "Engineer.h"
 #include <iostream>
 
-Engineer::Engineer(string cName, int cHP, string cPrimaryWeapon, string cDamage) 
+Engineer::Engineer(string cName, int cHP, string cPrimaryWeapon, int cDamage) 
     : Soldier(cName, cHP, cPrimaryWeapon, cDamage){}
 
 bool Engineer::hitZombie(Zombie * z){

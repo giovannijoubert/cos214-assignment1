@@ -1,7 +1,7 @@
 #include "Medic.h"
 #include <iostream>
 
-Medic::Medic(string cName, int cHP, string cPrimaryWeapon, string cDamage) 
+Medic::Medic(string cName, int cHP, string cPrimaryWeapon, int cDamage) 
     : Soldier(cName, cHP, cPrimaryWeapon, cDamage){}
 
 bool Medic::hitZombie(Zombie * z){
